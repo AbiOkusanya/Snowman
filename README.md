@@ -2,7 +2,7 @@
 Snowman game - project week
 
 >This is my first game  – SNOWMAN 
->
+![Wireframe for snowman](https://user-images.githubusercontent.com/73357072/101514986-dc858380-394b-11eb-9542-faea9f44258e.png) 
 >The rules of the game are as follows:
 >Take turns guessing a word by a letter each turn, if you are wrong, a part of the snowman figure is added and your turns are over when the figure is complete.
 >
