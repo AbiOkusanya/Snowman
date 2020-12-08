@@ -1,6 +1,6 @@
 # Snowman
 Snowman game - project week
-Create README file w/ all this information at minimum
+
 •	This is my first game  – SNOWMAN 
 
 •	The rules of the game are as follows:
