@@ -1,0 +1,36 @@
+/* use unordered list for nav bar */
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: solid red 5px
+    
+}
+
+li{
+    display: inline;
+    padding: 15px;
+}
+/* game board maybe change to a backgroundimage? */ 
+
+#board{
+    border: solid black 3px;
+    height: 550px;
+    background-color: rgb(241, 237, 234) ;
+}
+.gameDashes{
+    font-size: 75px;
+    text-align:center
+}
+
+.correct{
+    background-color: seashell;
+    border: solid black 2px;
+    height: 30px ;
+}
+
+.incorrect{
+    background-color: seashell;
+    border: solid black 2px;
+    height: 30px ;
+}
