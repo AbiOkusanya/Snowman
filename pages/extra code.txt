@@ -1,0 +1,47 @@
+//extra code
+
+  // let whatPlayertyped=event.KeyboardEvent;
+    // console.log(whatPlayertyped);
+//need to covert the keycode from the keydownevent to a character to pass to a string
+
+// let whatPlayertyped=event.keycode
+// console.log(whatPlayertyped)  
+let whatPlayertyped = document.getElementsByClassName(dashes)
+console.log (whatPlayertyped)  
+// let keypressed = keypressed.toString();
+//     console.log (keypressed); //not sure if this part is working
+
+//     if ////
+///
+<!-- <div id = 'gameName'>Snowman Game</div>
+<div class='dashes'></div>
+<div id='theGame'>
+    <!-- <div id='title'>Snowman - guess these animals</div> -->
+    <div id= "startbutton" class= "button">Start Here</div>
+</div>
+</body> -->
+////////original plan 
+//keydown with keyboard event provide code indicating which key ispressed
+/*The static String.fromCharCode() method returns a string created from 
+the specified sequence of UTF-16 code units.*/
+// document.addEventListener ("keydown", (event) => {
+//     console.log(event);
+//     let whatPlayerPresses=keydown.key;
+//     console.log(whatPlayerPresses);
+// //need to covert the keycode from the keydownevent to a character to pass to a string
+// // let whatPlayerPressed = [];    
+// let character = String.fromCharCode(whatPlayerPresses);//something wrong here
+//     console.log (character); //not sure if this part is working
+
+// })
+//need to check if whatPlayerPresses is correct
+// if (character.indexof(playWord)> -1){
+//     console.log (true);
+// }
+/*need to print/display the letter the player guesses whether correct or not
+document.getElementbyId('correct').innerHTML = whatPlayerPresses ?*/
+//need for when guess is complete and word right alert woo hoo
+
+//need when out of guess or word wrong alert try again
+//show how many turns are left?
+//if time either have a melted snowman appear if answer wrong or complete snowman if right?

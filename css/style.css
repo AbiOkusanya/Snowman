@@ -3,7 +3,7 @@ ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    border: solid red 5px
+    border: solid rgb(236, 97, 178) 5px
     
 }
 
@@ -24,13 +24,42 @@ li{
 }
 
 .correct{
-    background-color: seashell;
+    background-color: rgb(221, 184, 209);
     border: solid black 2px;
     height: 30px ;
+    font: weight 500; font-style: italic;
 }
 
 .incorrect{
-    background-color: seashell;
+    background-color: rgb(245, 73, 139);
     border: solid black 2px;
     height: 30px ;
+    font: weight 500; font-style: italic;
 }
+
+#shead {
+    background:rgb(255, 255, 255);
+    border: black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    /* position: absolute; */
+}
+
+#storso {
+    border-radius: 50%;
+    width: 150px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    
+} 
+
+#sbottom {
+    background: rgb(255, 255, 255);
+    border-radius: 75%;
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    
+}
+

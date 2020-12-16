@@ -1,9 +1,9 @@
 
 /*need function to make button work, need timer?*/
 
-function startGame (){
-    
-}
+// function startGame (){
+
+// }
 
 /* need an array of random words
 somehow make underscores to match length of words or get ridof the dashes
@@ -12,36 +12,44 @@ need to check if the player is correct by comapring input to the choosen word
 right guessed letters will push to correct section
 wrong guessed letters should push to incorrect section*/
 
+var incorrect = 0;
+var correct = 0;
+document.getElementsByClassName("incorrect").innerHTML = incorrect;
+document.getElementsByClassName("correct").innerHTML = correct;
 
 //const array of words
-const word= ['duck', 'coconut', 'cat','head','goat','cake','fish','happy']
+const words = ['duck', 'snake', 'cat', 'giraffe', 'goat', 'fish', 'dolphin'];
 //random word genartor first get random number then it picks the word from array based on index?
-let randomNum = Math.floor (Math.random()*word.length);
-let playWord = word[randomNum];
-console.log(playWord);
 
-//dashes match the lenght of random words
-let dashes = word[randomNum];
+let word = words[Math.floor(Math.random() * words.length)];
 
-// console.log(playWord);
+let answerArray = []; //empty array for the dashes/answers answerArray
+// let answerArray = () => {
+    for (i = 0; i < word.length; i++){
+        answerArray[i]= "_";
+    }
+    let remainingLetters = word.length;
 
-let printedDashes =[]; 
-let printingDashes = () => {
-    for(let i=0; i<playWord.length; i++){
-    printedDashes.push ("-") ;
+
+//diplay progress
+while (remainingLetters > 0) {
+    alert(answerArray.join(" "));
+    // Get a guess from the player      
+    let guess = prompt("Guess a letter, or Cancel to stop playing.");
+    let maxTries = 5
+    if (guess === null) {        // Exit the game loop        
+        break;
+    } else if (guess.length !== 1) {
+        alert("Please enter a single letter.");
+    } else {
+        // Update the game state with the guess        
+        for (var j = 0; j < word.length; j++) {
+            if (word[j] === guess) {
+                answerArray[j] = guess;
+                remainingLetters--;
+            }
+        }
+    }
 }
-    return printedDashes
-}
-
-console.log (printingDashes());
-
-//keydown with keyboard event provide code indicating which key ispressed
-/*The static String.fromCharCode() method returns a string created from 
-the specified sequence of UTF-16 code units.*/
-document.addEventListener ("keydown", event => {
-    console.log(event);
-    let KeyboardEvent=event.KeyboardEvent;
-    console.log(KeyboardEvent);
-    let playerWord = String.fromCharCode();
-    console.log (playerWord)
-})
+alert(answerArray.join(" "));    
+alert("Woo Hoo you won! The answer was " + word);

@@ -10,14 +10,14 @@
     <h1>Snowman Game</h1>
    
         <ul>
-            <li><a href="http://willlinktogamerules">Game Intro & Rules</a></li>
-           <li><a href="http://willlinktocreditpage">Credits</a></li>
+            <li><a href="pages/gameInformation.html">Game Intro & Rules</a></li>
+           <li><a href="pages/Credits.html">Credits</a></li>
         </ul>
 
          <!-- /*add game start button to board or page? -->
-<input type="button" value="Start" onclick="startGame()";/>
-<!-- /*need function for button in js file -->
-   <!-- need timer? -->
+<!-- <input type="button" value="New Game" onclick="startGame()";/> -->
+<input type="text" placeholder ="Guess a letter" id="guess">
+
 
 <div id="board"> 
     <!-- moved these classes into board  -->
@@ -25,11 +25,25 @@
     <div class="gameDashes">_ _ _ _ </div>
     <br>  <br>
     <!-- where the right letters guessed should go -->
+
     <div class="correct">Correct Guess </div> 
+    <!-- <form id ="text"></form>
+    <input type="text" placeholder="Put your guess here" id="userInput"> -->
     <br>  <br>
+
+
     <!-- were the wrong letters guessed should go -->
     <div class="incorrect">Incorrect Guess </div> 
+    <div>
+    <p id=shead ></p>
+    <p id=lefteye ></p>
+    <p id=righteye ></p>
+    <p id=storso ></p>
+    <p id=sbottom ></p>
 </div>
+
+
+
     
  
 
