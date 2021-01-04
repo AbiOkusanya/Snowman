@@ -37,29 +37,34 @@ li{
     font: weight 500; font-style: italic;
 }
 
-#shead {
+/* #shead {
     background:rgb(255, 255, 255);
     border: black;
     border-radius: 50%;
     width: 100px;
     height: 100px;
     /* position: absolute; */
-}
-
+/* } */
+/* 
 #storso {
     border-radius: 50%;
     width: 150px;
     height: 100px;
     background-color: rgb(255, 255, 255);
     
-} 
+}  */
 
-#sbottom {
+/* #sbottom {
     background: rgb(255, 255, 255);
     border-radius: 75%;
     width: 200px;
     height: 150px;
     position: absolute;
     
-}
+} */
+
+/* position of the snowman  */
+/* const x = 10; */
+ellipse (25,220,24,24)
+
 

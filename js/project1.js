@@ -39,7 +39,7 @@ while (remainingLetters > 0) {
     let maxTries = 5
     if (guess === null) {        // Exit the game loop        
         break;
-    } else if (guess.length !== 1) {
+    } else if (guess.length !== 1) {  //if guess is not strictly = to 1 charac.
         alert("Please enter a single letter.");
     } else {
         // Update the game state with the guess        
